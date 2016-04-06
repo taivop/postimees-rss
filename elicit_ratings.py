@@ -27,6 +27,8 @@ unrated = get_all_unrated_articles(conn)
 rated = get_all_rated_articles(conn)
 
 print("%d unrated articles, %d rated articles." % (len(unrated), len(rated)))
+print("Type 'q' to quit, 'x' to skip, '1' to classify into positive class, and anything else to classify into negative"
+      " class.")
 
 for article in unrated:
     article_id = article[0]
